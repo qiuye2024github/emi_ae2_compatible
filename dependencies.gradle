@@ -7,15 +7,12 @@ dependencies {
     modImplementation ("org.appliedenergistics:guideme:${project.guideme_version}")
     modImplementation ("appeng:appliedenergistics2-forge:${project.ae2_version}")
 
-    modImplementation("maven.modrinth:glodium:${project.glodium_version}-forge")
-    modImplementation("maven.modrinth:extended-ae:${project.extendedae_version}-forge") { transitive false }
-
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-forge-api:$project.jei_version") { transitive false }
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-common-api:$project.jei_version") { transitive false }
     modRuntimeOnly("mezz.jei:jei-$project.minecraft_version-forge:$project.jei_version") { transitive false }
 
-    modRuntimeOnly("maven.modrinth:sophisticated-core:$project.minecraft_version-$project.sophisticated_core_version")
-    modRuntimeOnly("maven.modrinth:sophisticated-backpacks:$project.minecraft_version-$project.sophisticated_backpacks_version")
+    modImplementation("dev.emi:emi-forge:${project.emi_version}")
+
     modRuntimeOnly("maven.modrinth:jade:11.13.1+forge")
 
     modRuntimeOnly("dev:jecharacters:1.20.1-forge-4.5.11-dev-shadow")
